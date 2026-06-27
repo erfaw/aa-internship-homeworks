@@ -15,6 +15,8 @@ DONE => [01-check-perfect-num.py](https://github.com/erfaw/aa-internship-homewor
 ### 2
 برنامه ای بنویسید که یک عدد دریافت کند و جمع فاکتریل تا آن عدد رو چاپ کند
 
+DONE => [02-sum-factorial.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/02-sum-factorial.py)
+
 ---
 
 ### 3
