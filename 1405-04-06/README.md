@@ -36,6 +36,8 @@ DONE => [04-days-of-your-life.py](https://github.com/erfaw/aa-internship-homewor
 ### 5
 کلاسی بنویسید که نزدیک ترین ویژگی ها و متد ها در رابطه با یک انسان رو داشته باشه(فقط عزیزانی که کلاس نویسی کردن)
 
+DONE => [05-human-class.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/05-human-class.py)
+
 ---
 
 ### 6
