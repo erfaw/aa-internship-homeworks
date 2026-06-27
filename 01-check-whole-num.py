@@ -23,6 +23,10 @@ def is_perfect_number(n) -> bool:
     else: 
         number = int(number)
 
+    # Check for positivity
+    if not number > 0:
+        return False
+
     return True
 
 _number:str = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
