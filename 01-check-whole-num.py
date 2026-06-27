@@ -40,8 +40,13 @@ def is_perfect_number(n) -> bool:
 
     return True
 
-_number:str = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
+def main():
+    _number:str = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
+    print(
+        is_perfect_number(_number)
+    )
 
-print(
-    is_perfect_number(_number)
-)
+main()
+while input('\nretry? (y/n)').lower() == 'y':
+    sp.call('clear', shell=True)
+    main()
