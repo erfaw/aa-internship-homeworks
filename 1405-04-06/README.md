@@ -22,6 +22,8 @@ DONE => [02-sum-factorial.py](https://github.com/erfaw/aa-internship-homeworks/b
 ### 3
 تابعی بنویسید که کار متد Sort رو روی لیست ها و set ها انجام دهد
 
+DONE => [03-sort-on-lists-and-sets.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/03-sort-on-lists-and-sets.py)
+
 ---
 
 ### 4
