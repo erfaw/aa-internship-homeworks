@@ -5,6 +5,13 @@ sp.call("clear", shell=True)
 
 CURRENT_DATE = dt.now()
 
+def calcualte_age(dt):
+    """
+    calculate and return age based on given datetime object.
+    """
+    age = CURRENT_DATE - birthday
+    return age.days
+
 print(
     "This program calculate counts of days you lived till now.\nPlease insert your birthday... (in Gregorian Calendar)"
 )
@@ -44,9 +51,8 @@ if not 1 <= day <= 31:
     # TODO : insert validation for leapyear
     # TODO : insert validation for each month with calendar.monthrange()
 
-print(year)
-print(month)
-print(day)
-
 birthday = dt(year=year, month=month, day=day)
-print(birthday)
+
+print(
+    calcualte_age(birthday)
+)
