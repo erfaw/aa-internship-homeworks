@@ -21,6 +21,16 @@ if year > CURRENT_DATE.year or year < (CURRENT_DATE.year) - 100 :
     raise SystemExit 
 
 month = input("Month: ")
+try:
+    month = int(year)
+except ValueError:
+    print('Just integer values.')
+    raise SystemExit 
+
+if not 1 <= month <= 12:
+    print('Please insert a valid month number. (1 till 12)')
+    raise SystemExit
+
 date = input("Day: ")
 
 print(year)
