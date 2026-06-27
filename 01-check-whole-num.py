@@ -2,7 +2,7 @@ import subprocess as sp
 
 sp.call("clear", shell=True)
 
-def is_perfect_number(n) -> bool:
+def is_perfect_number(n:float) -> bool:
     """
     checks a number is perfect or not. 
     """
