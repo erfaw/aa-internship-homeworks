@@ -22,7 +22,7 @@ if year > CURRENT_DATE.year or year < (CURRENT_DATE.year) - 100 :
 
 month = input("Month: ")
 try:
-    month = int(year)
+    month = int(month)
 except ValueError:
     print('Just integer values.')
     raise SystemExit 
@@ -33,7 +33,7 @@ if not 1 <= month <= 12:
 
 day = input("Day: ")
 try:
-    day = int(year)
+    day = int(day)
 except ValueError:
     print('Just integer values.')
     raise SystemExit 
@@ -47,3 +47,6 @@ if not 1 <= day <= 31:
 print(year)
 print(month)
 print(day)
+
+birthday = dt(year=year, month=month, day=day)
+print(birthday)
