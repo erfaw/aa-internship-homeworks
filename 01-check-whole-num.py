@@ -17,7 +17,9 @@ def is_perfect_number(n) -> bool:
     except ValueError: 
         print("Please insert a valid input. (integer number)")
 
-    # Check number to be int
+    # Check inputted number to be int
+    if not number == int(number):
+        return False
 
     return True
 
