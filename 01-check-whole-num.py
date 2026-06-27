@@ -7,15 +7,20 @@ import subprocess as sp
 
 sp.call("clear", shell=True)
 
-def is_perfect_number(n:float) -> bool:
+def is_perfect_number(n) -> bool:
     """
     checks a number is perfect or not. 
     """
+    # Check if input is a numeric value
+    try: 
+        number = float(n)
+    except ValueError: 
+        print("Please insert a valid input. (integer number)")
+
+    # Check number to be int
+
     return True
 
 _number:str = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
 
-try: 
-    input_num = float(_number)
-except ValueError: 
-    print("Please insert a valid input. (integer number, float number)")
+
