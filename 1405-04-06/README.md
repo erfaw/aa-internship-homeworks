@@ -27,6 +27,8 @@ DONE => [02-sum-factorial.py](https://github.com/erfaw/aa-internship-homeworks/b
 ### 4
 برنامه ای بنویسید که سن کاربر رو گرفته و سال میلادی، تعداد روز های زندگیش رو چاپ کنه
 
+DONE => [04-days-of-your-life.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/04-days-of-your-life.py)
+
 ---
 
 ### 5
