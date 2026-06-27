@@ -56,6 +56,8 @@ N = 5
 *
 </p>
 
+DONE => [06-print-stars.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/06-print-stars.py)
+
 ---
 
 ### 7
@@ -68,6 +70,8 @@ N = 5
 <p>321</p>
 <p>21</p>
 <p>1</p>
+
+DONE => [07-print-numbers.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/07-print-numbers.py)
 
 ---
 
@@ -82,5 +86,7 @@ N = 5
 <p>345</p>
 <p>45</p>
 <p>5</p>
+
+DONE => [08-print-numbers-reverse.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-06/08-print-numbers-reverse.py)
 
 ---
