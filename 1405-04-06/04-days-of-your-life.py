@@ -41,6 +41,8 @@ except ValueError:
 if not 1 <= day <= 31:
     print('Please insert a valid day number. (1 till 31)')
     raise SystemExit
+    # TODO : insert validation for leapyear
+    # TODO : insert validation for each month with calendar.monthrange()
 
 print(year)
 print(month)
