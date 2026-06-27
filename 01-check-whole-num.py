@@ -15,4 +15,7 @@ def is_perfect_number(n:float) -> bool:
 
 input_num = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
 
-print(input_num)
+try: 
+    input_num = float(input_num)
+except ValueError: 
+    print("Please insert a valid input. (integer number, float number)")
