@@ -26,6 +26,10 @@ def is_perfect_number(n) -> bool:
     # Check for positivity
     if not number > 0:
         return False
+    
+    # End check to be perfect 
+    for i in range(1, number):
+        print(i)
 
     return True
 
