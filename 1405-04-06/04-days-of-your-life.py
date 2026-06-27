@@ -16,8 +16,9 @@ except ValueError:
     print('Just integer values.')
     raise SystemExit 
 
-if year > CURRENT_DATE.year:
-    print("impossible bro! 😂")
+if year > CURRENT_DATE.year or year < (CURRENT_DATE.year) - 100 :
+    print(f"impossible bro! 😂, are you trying to say you're {CURRENT_DATE.year - year} ?! C'mon...")
+    raise SystemExit 
 
 month = input("Month: ")
 date = input("Day: ")
