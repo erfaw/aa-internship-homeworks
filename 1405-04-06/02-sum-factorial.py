@@ -7,6 +7,9 @@ except ValueError:
     print('Please enter an Integer number.')
     raise SystemExit
 
+if not _number >= 1 :
+    print('Factorial needs positive numbers.')
+
 def calculate_factorial(n):
     """
     Calculate factorial of recieved number. with recursive way.
@@ -15,6 +18,7 @@ def calculate_factorial(n):
         return n * calculate_factorial(n-1)
     else: 
         return 1
+
 
 sum = 0
 for i in range(1, _number+1): 
