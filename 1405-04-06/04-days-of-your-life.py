@@ -31,8 +31,17 @@ if not 1 <= month <= 12:
     print('Please insert a valid month number. (1 till 12)')
     raise SystemExit
 
-date = input("Day: ")
+day = input("Day: ")
+try:
+    day = int(year)
+except ValueError:
+    print('Just integer values.')
+    raise SystemExit 
+
+if not 1 <= day <= 31:
+    print('Please insert a valid day number. (1 till 31)')
+    raise SystemExit
 
 print(year)
 print(month)
-print(date)
+print(day)
