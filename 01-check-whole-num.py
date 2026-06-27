@@ -20,6 +20,8 @@ def is_perfect_number(n) -> bool:
     # Check inputted number to be int
     if not number == int(number):
         return False
+    else: 
+        number = int(number)
 
     return True
 
