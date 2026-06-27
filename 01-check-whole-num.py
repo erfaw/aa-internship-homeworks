@@ -28,9 +28,13 @@ def is_perfect_number(n) -> bool:
         return False
     
     # End check to be perfect 
-    for i in range(1, number): # we knew 6 is a perfect number so it must result 1, 2, 3 for a 6 input.
+    sum = 0
+    for i in range(1, number): 
         if number % i == 0:
-            print(i)
+            sum += i
+    
+    if not number == sum :
+        return False
 
     return True
 
