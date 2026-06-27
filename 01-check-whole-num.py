@@ -25,4 +25,6 @@ def is_perfect_number(n) -> bool:
 
 _number:str = input('This program get a number and check is it a `perfect number` or not.\n\nPlease insert a number: ')
 
-
+print(
+    is_perfect_number(_number)
+)
