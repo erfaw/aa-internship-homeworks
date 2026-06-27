@@ -7,6 +7,12 @@ print(
 )
 
 year = input("Year: ")
+try:
+    year = int(year)
+except ValueError:
+    print('Just integer values.')
+    raise SystemExit 
+
 month = input("Month: ")
 date = input("Day: ")
 
