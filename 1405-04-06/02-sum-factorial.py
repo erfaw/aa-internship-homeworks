@@ -1,8 +1,11 @@
 import subprocess as sp
 
 sp.call('clear', shell=True)
-
-_number = int(input('please enter a valid number:\t '))
+try:
+    _number = int(input('please enter a valid number:\t '))
+except ValueError:
+    print('Please enter an Integer number.')
+    raise SystemExit
 
 def calculate_factorial(n):
     """
@@ -13,6 +16,9 @@ def calculate_factorial(n):
     else: 
         return 1
 
-print(
-    calculate_factorial(_number)
-)
+sum = 0
+for i in range(1, _number+1): 
+    factorial = calculate_factorial(i)
+    sum += calculate_factorial(i)
+    print(f"i={i}, fact={factorial}")
+print(f"\nEnd Result = {sum}")
