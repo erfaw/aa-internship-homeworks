@@ -1,6 +1,8 @@
 """
 What is `Perfect Number`? 
     In number theory, a perfect number is a positive integer that is equal to the sum of its positive proper divisors, that is, divisors excluding the number itself. (Google search)
+
+    It has to return True with this example values [6, 28, 496, 8128]
 """
 
 import subprocess as sp
