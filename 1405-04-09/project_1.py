@@ -6,6 +6,7 @@ GITHUB_LINK = r"https://api.github.com/users"
 username = input("Insert a GitHub username please:\n\t>> ")
 
 with rq.get(f"{GITHUB_LINK}/{username}", timeout=5) as response:
+    response.raise_for_status()
     data = response.json()
 
 print(f"""
