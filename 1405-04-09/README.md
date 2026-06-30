@@ -38,4 +38,6 @@ DONE => [project_1.py](https://github.com/erfaw/aa-internship-homeworks/blob/mai
 5. Status Code را نیز چاپ کند.
 6. خطاهای ConnectionError و Timeout را مدیریت کند.
 
+DONE => [project_2.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-09/project_2.py)
+
 ---
