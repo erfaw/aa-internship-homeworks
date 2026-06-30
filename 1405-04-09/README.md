@@ -21,6 +21,8 @@
 4. اگر کاربر وجود نداشت، پیام مناسبی نمایش دهد.
 5. خطاهای احتمالی (مثل قطع اینترنت) را مدیریت کند.
 
+DONE => [project_1.py](https://github.com/erfaw/aa-internship-homeworks/blob/main/1405-04-09/project_1.py)
+
 ---
 
 ### Project 2
