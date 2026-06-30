@@ -18,5 +18,5 @@ try:
                 print(f"Website is Online!✅ (status code: {response.status_code})")
             else:
                 print(f"Website is Offline!❌ (status code: {response.status_code})")
-except Timeout as e: 
-    print(f"Request timeout. please try again.\n\t\tError message: {e}")
+except Timeout: 
+    print(f"Request timeout. please try again.")
