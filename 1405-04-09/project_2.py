@@ -2,8 +2,10 @@ import requests as rq
 from requests.exceptions import Timeout
 
 url = input(
-    "Insert a site address (URL)\nURL format must be 'https://<site address>'\n\t >> "
+    "Insert a site address (URL)'\n\t >> "
 )
+if not 'https://' in url and not 'http://' in url:
+    url = "https://"+url
 
 try:
     with rq.get(url=url, timeout=5) as response:
