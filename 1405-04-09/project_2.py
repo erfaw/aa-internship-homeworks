@@ -1,7 +1,7 @@
 import requests as rq
 
 url = input(
-    "Insert a site address (URL)\nURL format must be 'https://<site address>'"
+    "Insert a site address (URL)\nURL format must be 'https://<site address>'\n\t >> "
 )
 
 with rq.get(url=url, timeout=10) as response:
