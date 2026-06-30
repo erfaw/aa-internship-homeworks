@@ -4,7 +4,7 @@ url = input(
     "Insert a site address (URL)\nURL format must be 'https://<site address>'\n\t >> "
 )
 
-with rq.get(url=url, timeout=10) as response:
+with rq.get(url=url, timeout=5) as response:
     try:
         response.raise_for_status()
     except ConnectionError as e:
