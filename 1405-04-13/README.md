@@ -41,4 +41,4 @@
 18. تعداد تمام حروف صدادار را محاسبه کنید.
 
 # CONTINUE ???
-Check next day directory. [1405-04-14](https://github.com/erfaw/aa-internship-homeworks/tree/main/1405-04-14)
+Check next day directory. [1405-04-14 && 1405-04-15](https://github.com/erfaw/aa-internship-homeworks/tree/main/1405-04-14%20%26%26%201405-04-15)
