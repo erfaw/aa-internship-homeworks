@@ -158,3 +158,6 @@
 99. یک Context Manager سفارشی برای باز کردن فایل بنویسید.
 
 100. یک Context Manager بنویسید که زمان اجرای هر بلوک with را اندازه‌گیری و ثبت کند.
+
+# CONTINUE ???
+Check next day directory. [1405-04-17](https://github.com/erfaw/aa-internship-homeworks/tree/main/1405-04-17)
