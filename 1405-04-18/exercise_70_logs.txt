@@ -4,3 +4,9 @@
 2026-07-09T07:14:26AM:__main__:a_test_func called with '3' arg.
 2026-07-09T07:14:26AM:__main__:a_test_func called with '4' arg.
 2026-07-09T07:14:26AM:__main__:a_test_func called with '5' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '0' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '1' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '2' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '3' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '4' arg.
+2026-07-09T08:43:02AM:__main__:a_test_func called with '5' arg.
