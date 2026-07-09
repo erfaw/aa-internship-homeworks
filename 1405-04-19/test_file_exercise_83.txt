@@ -1,0 +1,7 @@
+This is a test file for removing repeated lines from file.
+This is a test file for removing repeated lines from file.
+This is a test file for removing repeated lines from file.
+This is a test file for removing repeated lines from file.
+This is second line.
+This is second line.
+This is second line.
