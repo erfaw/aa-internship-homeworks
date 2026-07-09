@@ -1,0 +1,124 @@
+1405-04-07
+جمع بندی فعالیت های امروز
+•	Review previous
+•	 Pogress `logging-basic-tutorial` to middle-end of advanced part
+•	Durations : 
+o	[03:00 PM – 05:05 PM](2H)
+- یادآوری : در تمرینات دیروز برای تستِ ورودی و چیزی که از input میگیریم، وقتی میخواستیم مطمئن بشیم numeric هست میتونستیم از Str.isnumeric() استفاده کنیم. شاید بعدا refactor کردیم. (در حال حاضر با try-except و تبدیل کردن input() به int() انجام میشه و اگر ValueError داد except میشه که باید عددی وارد کنی. 
+Continue reading `logging-basic-tutorial`
+-ادامۀ Local_link و Link
+Logging to a file
+- بعد از تولید logger obj ، بخش basicConfig() رو براش کامل میکنیم و بهش میگیم که توی چه فایلی log هارو بنویسه. 
+- بسته به اینکه میخوایم یا نمیخوایم log ها پشتِ هم ردیف بشه از arg ای به نام filemode میتونیم استفاده کنیم و با w تنظیمش کنیم تا هردور فایل رو از ابتدا بنویسه. ( که البته بستگی به نیازی که داریم داره. مثلا شاید یه log file بخوایم که هربار که برنامه ران میشه log بندازه، و یه فایل میخوایم که همیشه log بندازه. )
+---
+Changing the format of displayed messages
+- حتی میتونیم فرمتِ نوشتنش هم تغیر بدیم، پس احتمالا میتونیم کاری کنیم که زمان هم استفاده بشه داخلش که مهم به نظر میاد. 
+---
+Displaying the date/time in messages
+- در انتهایِ استفادۀ basic میشه چنین چیزی. 
+from logging import getLogger, basicConfig, WARNING
+logger = getLogger(__name__)
+basicConfig(
+    filename="logs.md",
+    filemode='w', 
+    level=WARNING, 
+    encoding="utf-8", 
+    datefmt="%Y-%m-%dT%I:%M:%S%p",
+    format="%(asctime)s:%(name)s:%(message)s"
+)
+logger.warning('Hi %s %s\n', "erfan", "Heydari",)
+logger.critical('This is the End!\n',)
+---
+more advanced topics
+•	Loggers expose the interface that application code directly uses.
+•	Handlers send the log records (created by loggers) to the appropriate destination.
+•	Filters provide a finer grained facility for determining which log records to output.
+•	Formatters specify the layout of log records in the final output.
+- رویکرد مناسب اینه که ما module-level logger داشته باشیم با همون کدی که قبلتر دیدیم. که از __name__ استفاده میکنه ، همچنین در log های ثبت شده میتونیم اسمش رو ببنییم. 
+---
+---
+prompt learning with ChatGPT
+- خیلی خب، یه پرامپت از استاد داریم و میخوایم بدیم GPT و پیش بریم. پرامپت اینه: 
+می‌خوام ماژول logging پایتون رو کامل و دقیق یاد بگیرم فقط مطالب کاربردی و مورد استفاده در پروژه های واقعی، انواع سطح لاگ ها ساخت فایل لاگ، ایجاد لاگ رو جلسه به جلسه طوری آموزش بده که کامل متوجه بشم با مقدمه مناسب و توضیح بسیار ساده و کامل نه ی توضیح سطحی بلکه کامل و در عین حال ساده برای درک در پایان هر جلسه بهم ی تمرین بده که انجام بدم و تمرین رو چک کن و ارور ها و مشکلات رو بهم بگو که بهتر بشم و راه حل بده که بهتر کار رو پیش ببرم
+نتیجه نهایی
+این جمع‌بندی رو طوری نوشتم که اگر چند ماه بعد به جزوه‌ات برگشتی، کمتر از ۲ دقیقه طول بکشه همه‌چیز یادت بیاد.
+
+---
+
+ Logging چیست؟
+ثبت اتفاقات مهم برنامه برای مانیتورینگ، عیب‌یابی و نگهداری؛ نه صرفاً برای برنامه‌نویس، بلکه برای خودت در آینده، هم‌تیمی‌ها و تیم پشتیبانی.
+
+---
+
+ اجزای اصلی
+
+•	Logger: پیام را دریافت می‌کند.
+•	Level: شدت و اهمیت پیام را مشخص می‌کند.
+•	Formatter: ظاهر پیام را تعیین می‌کند.
+•	Handler: مقصد پیام را مشخص می‌کند (Console، File، ...).
+
+---
+
+ مسیر یک Log
+
+```
+Event
+  ↓
+Logger
+  ↓
+Level Check
+  ↓
+Formatter
+  ↓
+Handler
+  ↓
+Console / File / ...
+```
+
+---
+
+ Level ها
+
+•	DEBUG: اطلاعات جزئی برای توسعه و Debug.
+•	INFO: رویدادهای عادی و مهم (مثل Login موفق).
+•	WARNING: اتفاق غیرعادی که برنامه هنوز قادر به ادامه است.
+•	ERROR: خطا رخ داده، اما برنامه هنوز قابل ادامه است.
+•	CRITICAL: خطای بحرانی که ادامه اجرای برنامه یا سرویس را تهدید می‌کند.
+
+( درمورد level ها این نکته جالبه که بسته به اینکه برنامه از لحاظ اجرا در چه مرحله ای قرار داره طبقه بندی میشه. اتفاق غیر عادی ولی خطا نیست، خطایی که برنامه هنوز میتونه ادامه بده (یعنی میدونه چطور باهاش برخورد کنه) و خطای بحرانی که برنامه دیگه نمیتونه ادامه بده. )
+---
+
+ Best Practices
+
+•	هر فایل Logger مخصوص خودش را داشته باشد (`getLogger(__name__)`).
+•	پیام‌های Log باید شفاف، دارای Context و قابل فهم باشند.
+•	از پیام‌های مبهم مثل زیر پرهیز کن:
+o	`Done`
+o	`Error`
+o	`Something happened`
+
+•	همیشه از خودت بپرس:
+  > **اگر فقط فایل Log را ببینم، می‌توانم بفهمم چه اتفاقی افتاده؟**
+
+---
+
+ نکات پروژه‌ای
+
+•	یک Logger می‌تواند چند Handler داشته باشد.
+•	Handlerها می‌توانند همزمان پیام را به چند مقصد ارسال کنند (مثلاً Console و File).
+•	معمولاً در پروژه‌ها هر فایل Logger خودش را دارد و تنظیمات Logging به‌صورت مرکزی انجام می‌شود.
+
+---
+
+ اشتباهاتی که امروز یاد گرفتم
+
+•	بعد از وقوع Error، نباید Log موفقیت ثبت شود.
+•	Warning باید علت اتفاق غیرعادی را مشخص کند، نه صرفاً بگوید "اتفاقی افتاد".
+•	انتخاب Level باید بر اساس شدت و اهمیت رویداد باشد، نه صرفاً نام آن.
+
+---
+نتیجه جلسه
+✅ مفاهیم پایه Logging، Levelها و نحوه استفاده صحیح از آن‌ها در پروژه‌های واقعی را یاد گرفتم و آماده ورود به مباحث Configuration، Handler، Formatter و File Logging هستم.
+---
+ 
+ادامه
