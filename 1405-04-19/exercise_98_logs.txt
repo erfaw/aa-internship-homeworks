@@ -1,0 +1,10 @@
+2026-07-10T10:34:21AM : __main__ : Traceback (most recent call last):
+  File "C:\Users\erfaw\AppData\Local\Temp\ipykernel_2500\1861846152.py", line 18, in <module>
+    float('a')
+ValueError: could not convert string to float: 'a'
+
+2026-07-10T10:35:46AM : __main__ : Traceback (most recent call last):
+  File "C:\Users\erfaw\AppData\Local\Temp\ipykernel_8076\274508791.py", line 25, in <module>
+    float('a')
+ValueError: could not convert string to float: 'a'
+
