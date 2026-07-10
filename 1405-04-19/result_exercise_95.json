@@ -1,0 +1,37 @@
+[
+ {
+  "day": "Sunday",
+  "temp": "24",
+  "condition": "Sunny"
+ },
+ {
+  "day": "Thursday",
+  "temp": "14",
+  "condition": "Cloudy"
+ },
+ {
+  "day": "Monday",
+  "temp": "12",
+  "condition": "Sunny"
+ },
+ {
+  "day": "Tuesday",
+  "temp": "14",
+  "condition": "Rain"
+ },
+ {
+  "day": "Wednesday",
+  "temp": "15",
+  "condition": "Rain"
+ },
+ {
+  "day": "Friday",
+  "temp": "21",
+  "condition": "Sunny"
+ },
+ {
+  "day": "Saturday",
+  "temp": "22",
+  "condition": "Sunny"
+ }
+]
